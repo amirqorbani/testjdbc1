@@ -14,6 +14,9 @@ public class UserRepository {
                 pstmt.setString(2 , user.getUsername());
                 pstmt.setString(3 , user.getPassword() );
                 pstmt.setDate(4 , (Date) user.getSignup_date());
+                pstmt.executeUpdate();
+                connection.close();
+
 
     }
 }
