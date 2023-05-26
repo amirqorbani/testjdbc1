@@ -1,12 +1,10 @@
 package org.example;
 
-import org.example.entity.User;
 import org.example.repository.UserRepository;
-
+import org.example.entity.User;
 import java.sql.SQLException;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.List;
+
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -28,5 +26,5 @@ public class Main {
 //
 //        }
         userRepository1.delete(user11);
-
-    }}
+    }
+}

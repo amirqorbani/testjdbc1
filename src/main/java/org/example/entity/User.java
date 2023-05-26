@@ -5,8 +5,8 @@ import java.util.Objects;
 
 public class User {
     private int userId;
-     private String userName;
-     private String password;
+    private String userName;
+    private String password;
     private Date signupDate;
 
     public User(int userId, String username, String password, Date signupDate) {

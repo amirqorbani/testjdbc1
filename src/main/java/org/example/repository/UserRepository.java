@@ -3,9 +3,10 @@ package org.example.repository;
 import org.example.connection.MyConnection;
 import org.example.entity.User;
 
-import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.sql.*;
+
 
 public class UserRepository {
     public void save(User user) throws SQLException {
@@ -86,7 +87,8 @@ public class UserRepository {
         }
         connection.close();
     }
-    public void delete (User user) throws SQLException {
+
+    public void delete(User user) throws SQLException {
         Connection connection = MyConnection.getConnections();
         String sql = "delete from usertable where user_id = ? ";
         PreparedStatement pstmt = connection.prepareStatement(sql);
