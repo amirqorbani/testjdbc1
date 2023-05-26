@@ -9,5 +9,6 @@ public class MyConnection {
 
     public static Connection getConnections() throws SQLException {
         return DriverManager.getConnection("jdbc:postgresql://localhost:5432/mavenconnection", "postgres", "sbu16036");
+
     }
 }
