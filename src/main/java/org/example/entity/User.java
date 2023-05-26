@@ -4,32 +4,32 @@ import java.util.Date;
 import java.util.Objects;
 
 public class User {
-    private int user_id;
-     private String username;
+    private int userId;
+     private String userName;
      private String password;
-    private  Date signup_date;
+    private Date signupDate;
 
-    public User(int user_id, String username, String password, Date signup_date) {
-        this.user_id = user_id;
-        this.username = username;
+    public User(int userId, String username, String password, Date signupDate) {
+        this.userId = userId;
+        this.userName = username;
         this.password = password;
-        this.signup_date = signup_date;
+        this.signupDate = signupDate;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -40,34 +40,34 @@ public class User {
         this.password = password;
     }
 
-    public Date getSignup_date() {
-        return signup_date;
+    public Date getSignupDate() {
+        return signupDate;
     }
 
-    public void setSignup_date(Date signup_date) {
-        this.signup_date = signup_date;
+    public void setSignupDate(Date signupDate) {
+        this.signupDate = signupDate;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return user_id == user.user_id && Objects.equals(username, user.username) && Objects.equals(password, user.password) && Objects.equals(signup_date, user.signup_date);
+        User user1 = (User) o;
+        return userId == user1.userId && Objects.equals(userName, user1.userName) && Objects.equals(password, user1.password) && Objects.equals(signupDate, user1.signupDate);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(user_id, username, password, signup_date);
+        return Objects.hash(userId, userName, password, signupDate);
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "user_id=" + user_id +
-                ", username='" + username + '\'' +
+                "user_id=" + userId +
+                ", username='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                ", signup_date=" + signup_date +
+                ", signup_date=" + signupDate +
                 '}';
     }
 }
