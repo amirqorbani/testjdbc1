@@ -8,6 +8,7 @@ import java.util.Date;
 
 public class Main {
     //navidam umad
+    // we all love Navid
     public static void main(String[] args) throws SQLException {
         User user11 = new User(0, "amin", "aaaa", new Date());
         User user12 = new User(2, "sajad", "bbbb", new Date());
